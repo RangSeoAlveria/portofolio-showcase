@@ -23,7 +23,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="font-heading font-bold text-xl tracking-tight">dev.portfolio</span>
+          <span className="font-heading font-bold text-xl tracking-tight">Rangga.portfolio</span>
           <div className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground">
             <a href="#services" className="hover:text-primary transition-colors">Services</a>
             <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
@@ -128,72 +128,72 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
             <Card className="group overflow-hidden border-border/50 flex flex-col">
-              <div className="aspect-video bg-muted relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
-                  <Layout className="h-12 w-12 text-muted-foreground/50" />
-                </div>
+            <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+              <Layout className="h-12 w-12 text-primary/60" />
+            </div>
+
+            <CardHeader className="flex-1">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-heading text-xl font-bold">Web-Based Cashier System</h3>
               </div>
-              <CardHeader className="flex-1">
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-heading text-xl font-bold">E-commerce Dashboard</h3>
-                  <a href="#" className="text-muted-foreground hover:text-primary"><ExternalLink className="h-4 w-4" /></a>
-                </div>
-                <p className="text-muted-foreground text-sm mb-4">
-                  A responsive analytics dashboard for an online store showing sales data and inventory status.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">React</span>
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">Tailwind</span>
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">Recharts</span>
-                </div>
-              </CardHeader>
-            </Card>
+              <p className="text-muted-foreground text-sm mb-4">
+                A web-based cashier system designed to manage products, transactions, and stock using a database.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">HTML</span>
+                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">CSS</span>
+                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">JavaScript</span>
+                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">PHP</span>
+                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">MySQL</span>
+              </div>
+            </CardHeader>
+          </Card>
 
             {/* Project 2 */}
             <Card className="group overflow-hidden border-border/50 flex flex-col">
-              <div className="aspect-video bg-muted relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
-                  <Code2 className="h-12 w-12 text-muted-foreground/50" />
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 relative overflow-hidden flex items-center justify-center">
+                <Code2 className="h-12 w-12 text-primary/60" />
               </div>
+
               <CardHeader className="flex-1">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-heading text-xl font-bold">Task Manager</h3>
-                  <a href="#" className="text-muted-foreground hover:text-primary"><ExternalLink className="h-4 w-4" /></a>
+                  <h3 className="font-heading text-xl font-bold">
+                    Personal Portfolio Website
+                  </h3>
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">
-                  A kanban-style task management application with drag-and-drop functionality for organizing todo items.
+                  A responsive personal portfolio website showcasing projects, personal background, and skills with a clean and modern layout.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">React</span>
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">DnD Kit</span>
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">Zustand</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">HTML</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">CSS</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">JavaScript</span>
                 </div>
               </CardHeader>
             </Card>
 
             {/* Project 3 */}
             <Card className="group overflow-hidden border-border/50 flex flex-col">
-              <div className="aspect-video bg-muted relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
-                  <Globe className="h-12 w-12 text-muted-foreground/50" />
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 relative overflow-hidden flex items-center justify-center">
+                <Globe className="h-12 w-12 text-primary/60" />
               </div>
+
               <CardHeader className="flex-1">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-heading text-xl font-bold">Weather App</h3>
-                  <a href="#" className="text-muted-foreground hover:text-primary"><ExternalLink className="h-4 w-4" /></a>
+                  <h3 className="font-heading text-xl font-bold">
+                    Static Website / Landing Page
+                  </h3>
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Real-time weather dashboard fetching data from a public API with location search and 5-day forecast.
+                  A static website project focused on layout structure, responsiveness, and user-friendly design.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">React</span>
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">Axios</span>
-                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">API</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">HTML</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">CSS</span>
                 </div>
               </CardHeader>
             </Card>
+
           </div>
         </div>
       </section>
@@ -260,19 +260,24 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
-              <a href="mailto:hello@example.com">
-                <Mail className="h-4 w-4" /> Send me an email
+          <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=abednegoranggacatajaya@gmail.com&su=Contact%20from%20Portfolio&body=Hello%20Abednego,"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Mail className="h-4 w-4" />
+                Contact Me
               </a>
             </Button>
             <div className="flex gap-4">
               <Button variant="outline" size="icon" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <a href="www.linkedin.com/in/abednego-rangga-cata-140b52373" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <a href="https://github.com/RangSeoAlveria" target="_blank" rel="noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
