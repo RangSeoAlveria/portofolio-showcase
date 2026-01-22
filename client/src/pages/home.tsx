@@ -271,10 +271,17 @@ export default function Home() {
               </a>
             </Button>
             <div className="flex gap-4">
-              <Button variant="outline" size="icon" asChild>
-                <a href="www.linkedin.com/in/abednego-rangga-cata-140b52373" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <Button variant="outline" size="icon" asChild>
+                <a
+                  href="https://www.linkedin.com/in/abednego-rangga-cata-140b52373"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
                   <Linkedin className="h-5 w-5" />
                 </a>
+              </Button>
+            </div>
               </Button>
               <Button variant="outline" size="icon" asChild>
                 <a href="https://github.com/RangSeoAlveria" target="_blank" rel="noreferrer" aria-label="GitHub">
