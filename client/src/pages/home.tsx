@@ -23,7 +23,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="font-heading font-bold text-xl tracking-tight">Rangga.portfolio</span>
+          <span className="font-heading font-bold text-xl tracking-tight">portfolio</span>
           <div className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground">
             <a href="#services" className="hover:text-primary transition-colors">Services</a>
             <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
@@ -51,14 +51,20 @@ export default function Home() {
               </span>
             </motion.div>
             
-            <motion.h1 variants={fadeIn} className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground leading-[1.1]">
+            <motion.h1 
+              variants={fadeIn} 
+              className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground leading-[1.1]"
+            >
               Junior Frontend Developer <br />
               <span className="text-muted-foreground">crafting clean interfaces.</span>
             </motion.h1>
-            
-            <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-              I build accessible, pixel-perfect, and performant web experiences. 
-              Focused on React, modern CSS, and creating intuitive user journeys.
+
+            <motion.p 
+              variants={fadeIn} 
+              className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
+            >
+              I build accessible, pixel-perfect web experiences using React and modern CSS. 
+              Currently exploring UI/UX design to better understand how people interact with interfaces.
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-wrap gap-4 pt-4">
@@ -80,7 +86,11 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="mb-12">
             <h2 className="font-heading text-3xl font-bold mb-4">What I Do</h2>
-            <div className="h-1 w-20 bg-primary rounded-full"></div>
+            <div className="h-1 w-20 bg-primary rounded-full mb-6"></div>
+            <p className="text-muted-foreground">
+              As a junior frontend developer, I focus on building responsive interfaces 
+              while continuously learning UI/UX principles to improve usability and design quality.
+            </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -109,13 +119,26 @@ export default function Home() {
                 <Layout className="h-10 w-10 text-primary mb-2" />
                 <CardTitle>UI Improvements</CardTitle>
                 <CardDescription>
-                  Refining existing interfaces, fixing layout bugs, and improving user interaction details.
+                  Refining interfaces by improving layout clarity, interaction feedback,
+                  and overall usability for better user experience.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="border-border/50 shadow-sm hover:shadow-md transition-shadow">
+              <CardHeader>
+                <Layout className="h-10 w-10 text-primary mb-2" />
+                <CardTitle>UI/UX Exploration</CardTitle>
+                <CardDescription>
+                  Currently learning UI/UX principles such as layout hierarchy, usability, 
+                  and user flows to create more intuitive interfaces.
                 </CardDescription>
               </CardHeader>
             </Card>
           </div>
         </div>
       </section>
+      
 
       {/* Featured Projects */}
       <section id="projects" className="py-20 px-6">
@@ -128,41 +151,43 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
             <Card className="group overflow-hidden border-border/50 flex flex-col">
-            <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-              <Layout className="h-12 w-12 text-primary/60" />
-            </div>
-
-            <CardHeader className="flex-1">
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="font-heading text-xl font-bold">Web-Based Cashier System</h3>
-              </div>
-              <p className="text-muted-foreground text-sm mb-4">
-                A web-based cashier system designed to manage products, transactions, and stock using a database.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-auto">
-                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">HTML</span>
-                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">CSS</span>
-                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">JavaScript</span>
-                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">PHP</span>
-                <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">MySQL</span>
-              </div>
-            </CardHeader>
-          </Card>
-
-            {/* Project 2 */}
-            <Card className="group overflow-hidden border-border/50 flex flex-col">
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 relative overflow-hidden flex items-center justify-center">
-                <Code2 className="h-12 w-12 text-primary/60" />
+              <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                <Layout className="h-12 w-12 text-primary/60" />
               </div>
 
               <CardHeader className="flex-1">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-heading text-xl font-bold">
-                    Personal Portfolio Website
-                  </h3>
+                  <h3 className="font-heading text-xl font-bold">Web-Based Cashier System</h3>
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">
-                  A responsive personal portfolio website showcasing projects, personal background, and skills with a clean and modern layout.
+                  A web-based cashier system designed to manage products, transactions, 
+                  and stock efficiently with a simple and easy-to-use interface.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">HTML</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">CSS</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">JavaScript</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">PHP</span>
+                  <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">MySQL</span>
+                </div>
+              </CardHeader>
+            </Card>
+
+
+            {/* Project 2 */}
+            <Card className="group overflow-hidden border-border/50 flex flex-col">
+              <div className="aspect-video bg-muted relative overflow-hidden">
+                <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
+                  <Code2 className="h-12 w-12 text-muted-foreground/50" />
+                </div>
+              </div>
+              <CardHeader className="flex-1">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-heading text-xl font-bold">Personal Portfolio Website</h3>
+                </div>
+                <p className="text-muted-foreground text-sm mb-4">
+                  AA responsive portfolio website designed with clean layout structure 
+                  and simple navigation to improve user experience.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">
                   <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">HTML</span>
@@ -174,18 +199,18 @@ export default function Home() {
 
             {/* Project 3 */}
             <Card className="group overflow-hidden border-border/50 flex flex-col">
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 relative overflow-hidden flex items-center justify-center">
-                <Globe className="h-12 w-12 text-primary/60" />
+              <div className="aspect-video bg-muted relative overflow-hidden">
+                <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
+                  <Globe className="h-12 w-12 text-muted-foreground/50" />
+                </div>
               </div>
-
               <CardHeader className="flex-1">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-heading text-xl font-bold">
-                    Static Website / Landing Page
-                  </h3>
+                  <h3 className="font-heading text-xl font-bold">Static Website / Landing Page</h3>
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">
-                  A static website project focused on layout structure, responsiveness, and user-friendly design.
+                  A static website project focused on layout hierarchy, responsiveness, 
+                  and clear visual structure for better usability.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">
                   <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium">HTML</span>
@@ -193,7 +218,6 @@ export default function Home() {
                 </div>
               </CardHeader>
             </Card>
-
           </div>
         </div>
       </section>
@@ -239,6 +263,30 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
+                UI / UX Exploration
+              </h3>
+
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "User Interface Design",
+                  "User Experience Basics",
+                  "Wireframing",
+                  "Layout & Visual Hierarchy",
+                  "Design Systems",
+                  "Usability Principles"
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="px-4 py-2 bg-background border border-border rounded-md font-medium shadow-sm"
+                  >
+                    {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -260,31 +308,24 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=abednegoranggacatajaya@gmail.com&su=Contact%20from%20Portfolio&body=Hello%20Abednego,"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=abednegoranggacatajaya@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Mail className="h-4 w-4" />
                 Contact Me
               </a>
             </Button>
             <div className="flex gap-4">
-            <Button variant="outline" size="icon" asChild>
-                <a
-                  href="https://www.linkedin.com/in/abednego-rangga-cata-140b52373"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
+              <Button variant="outline" size="icon" asChild>
+                <a href="www.linkedin.com/in/abednego-rangga-cata-140b52373" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-            </div>
-              </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="https://github.com/RangSeoAlveria" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
